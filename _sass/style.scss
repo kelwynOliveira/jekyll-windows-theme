@@ -16,9 +16,10 @@ $light-color: #fff;
 $grey-color: #c9cdce;
 $grey-dark: #666;
 
-$border-light: 3px solid $grey-color;
-$border-lighter: 3px solid $light-color;
-$border-dark: 3px solid $grey-dark;
+$border-grey: 3px solid $grey-color;
+$border-light: 3px solid $light-color;
+$border-dark-grey: 3px solid $grey-dark;
+$border-dark: 3px solid #000;
 
 // Width of the content area
 $on-min: 450px !default;
