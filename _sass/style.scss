@@ -1,4 +1,35 @@
 @charset "utf-8";
+// Define defaults for each variable.
+$base-font-family: monospace, sans-serif !default;
+$font-size: 16px !default;
+$large-font-size: $font-size * 1.125 !default;
+$small-font-size: $font-size * 0.875 !default;
+$base-font-weight: 400 !default;
+$base-line-height: 1.5 !default;
+$background-color: transparent;
+
+$spacing-unit: 30px !default;
+
+// colors
+$text-color: #111 !default;
+$light-color: #fff;
+$grey-color: #c9cdce;
+$grey-dark: #666;
+
+$border-light: 3px solid $grey-color;
+$border-lighter: 3px solid $light-color;
+$border-dark: 3px solid $grey-dark;
+
+// Width of the content area
+$on-min: 450px !default;
+$on-palm: 800px !default;
+$on-laptop: 1200px !default;
+
+@mixin media-query($device) {
+  @media screen and (max-width: $device) {
+    @content;
+  }
+}
 
 // Import partials.
-@import "style/reset";
+@import "style/reset", "style/base", "style/layout";
