@@ -150,6 +150,26 @@ body {
   }
 }
 
+// Aside
+
+// Main window
+.presentation {
+  li + li {
+    margin-top: 10px;
+  }
+
+  .article-link {
+    color: $text-color;
+    font-weight: $base-font-weight;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
 // footer
 .footer {
   border-top: $border-light;
