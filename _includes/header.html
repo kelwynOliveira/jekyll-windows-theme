@@ -1,3 +1,5 @@
+{%- include menu/inputs.html -%}
+
 <header class="header noprint">
   <div class="info">
     <img src="{{ '/assets/img/about.png' | relative_url }}" alt="">
@@ -5,6 +7,12 @@
   </div>
 
   <nav class="menu">
+    {%- include menu/options.html -%}
 
+    <!-- Menu itens -->
+    {%- include menu/file.html -%}
+    {%- include menu/contacts.html -%}
+
+    {%- include menu/items.html -%}
   </nav>
 </header>

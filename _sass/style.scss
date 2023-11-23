@@ -11,6 +11,7 @@ $background-color: transparent;
 $spacing-unit: 30px !default;
 
 // colors
+$link-color: #00f;
 $text-color: #111 !default;
 $light-color: #fff;
 $grey-color: #c9cdce;
@@ -33,4 +34,4 @@ $on-laptop: 1200px !default;
 }
 
 // Import partials.
-@import "style/reset", "style/base", "style/layout";
+@import "style/reset", "style/base", "style/layout", "style/menu-check";

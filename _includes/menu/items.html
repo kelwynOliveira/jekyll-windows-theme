@@ -1,0 +1,12 @@
+{% for main-item in site.data.menu %}
+<ul class="menu-item menu-item-{{main-item[1]['title']}}">
+  {% for item in main-item[1]['content'] %}
+  <li class="button">
+    <a href="{{item['href']}}" target="_blank">
+      <img src="{{ item['img'] | relative_url }}" alt="">
+      <span>{{item['name']}}</span>
+    </a>
+  </li>
+  {% endfor %}
+</ul>
+{% endfor %}

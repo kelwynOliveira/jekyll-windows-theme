@@ -1,0 +1,6 @@
+<!-- For main menu -->
+<input class="inputs" type="radio" id="file" name="menu-option" value="file" checked>
+<input class="inputs" type="radio" id="info" name="menu-option" value="info">
+{% for main-item in site.data.menu %}
+<input class="inputs" type="radio" id="{{ main-item[1]['title'] }}" name="menu-option" value="{{ main-item[1]['title'] }}">
+{% endfor %}

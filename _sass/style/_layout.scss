@@ -18,6 +18,10 @@ body {
   flex-basis: auto;
 }
 
+.inputs {
+  display: none;
+}
+
 // Header
 .header {
   background-color: $grey-color;
@@ -45,6 +49,55 @@ body {
   @include media-query($on-palm) {
     img {
       height: 20px;
+    }
+  }
+
+  .menu {
+    .main-options {
+      padding-top: 5px;
+      // padding-bottom: 5px;
+      display: flex;
+      .level-1 {
+        cursor: pointer;
+        padding: 5px 10px;
+        display: block;
+        border-bottom: $border-dark-grey;
+        span {
+          text-decoration: underline;
+        }
+      }
+      .space {
+        width: 100%;
+        border-bottom: $border-dark-grey;
+      }
+    }
+    .menu-item {
+      .button {
+        display: inline-block;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        padding: 1px 6px;
+        font-size: $font-size;
+        line-height: $base-line-height;
+        text-align: center;
+        a {
+          text-decoration: none;
+          font-weight: $base-font-weight;
+          color: $text-color;
+        }
+        img,
+        .svg-icon {
+          display: block;
+          height: 30px;
+          width: 30px;
+          margin: 0 auto;
+        }
+        img,
+        span {
+          display: block;
+        }
+      }
     }
   }
 }

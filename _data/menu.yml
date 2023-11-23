@@ -1,0 +1,9 @@
+View:
+  title: view
+  content:
+    - name: Read
+      href: www.exemple.ex
+      img: assets/img/about.png
+    - name: Windows
+      href: www.exemple.ex
+      img: assets/img/about.png

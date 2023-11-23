@@ -1,0 +1,11 @@
+<div class="main-options">
+  <label class="level-1" for="file">File</label>
+
+  {% for main-item in site.data.menu %}
+  <label class="level-1" for="{{main-item[1]['title']}}">{{ main-item[1]['title'] | capitalize }}</label>
+  {% endfor %}
+
+  <label class="level-1" for="info">Info</label>
+
+  <div class="space"></div>
+</div>

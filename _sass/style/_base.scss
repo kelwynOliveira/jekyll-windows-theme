@@ -94,6 +94,28 @@ h6 {
 /**
  * Links
  */
+a {
+  text-decoration: none;
+  font-weight: 700;
+
+  &:hover {
+    color: $text-color;
+    text-decoration: underline;
+  }
+
+  .social-media-list &:hover {
+    text-decoration: none;
+
+    .username {
+      text-decoration: none;
+    }
+  }
+}
+a,
+a:active,
+a:visited {
+  color: $link-color;
+}
 
 /**
  * Blockquotes
@@ -119,6 +141,55 @@ h6 {
 /**
  * Icons
  */
+.svg-icon {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  vertical-align: text-top;
+}
+
+.mail .svg-icon {
+  fill: #4b4646;
+}
+.linkedin .svg-icon {
+  fill: #0077b5;
+}
+.github .svg-icon {
+  fill: #474747;
+}
+.twitter .svg-icon {
+  fill: #55acee;
+}
+.youtube .svg-icon {
+  fill: #ff2020;
+}
+.instagram .svg-icon {
+  fill: #a620ff;
+}
+.facebook .svg-icon {
+  fill: #3b5998;
+}
+.dribbble .svg-icon {
+  fill: #ff6600;
+}
+.flickr .svg-icon {
+  fill: #4787ff;
+}
+.pinterest .svg-icon {
+  fill: #cb2027;
+}
+.whatsapp .svg-icon {
+  fill: #26cb20;
+}
+.mastodon .svg-icon {
+  fill: #25abf8;
+}
+.googleplus .svg-icon {
+  fill: #e7353b;
+}
+.rss .svg-icon {
+  fill: #ff580a;
+}
 
 /**
  * Tables
