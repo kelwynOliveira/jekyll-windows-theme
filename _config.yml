@@ -1,0 +1,30 @@
+title: "Windows theme"
+description: >- # this means to ignore newlines until "baseurl:"
+  This is an awesome theme to use.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+
+email: your-email@example.com
+linkedin_username: kelwynoliveira
+github_username: kelwynOliveira
+twitter_username: example
+youtube_username: example
+instagram_username: example
+facebook_username: example
+dribbble_username: example
+flickr_username: example
+pinterest_username: example
+whatsapp: example
+mastodon: example
+mst:
+  username: example
+  instance: example
+googleplus_username: example
+rss: example
+
+# Build settings
+permalink: /:title
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-feed
